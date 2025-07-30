@@ -1,0 +1,18 @@
+# Ignora node_modules 
+node_modules/
+
+# Ignora base de datos local 
+*.sqlite
+
+# Ignora archivos de entorno 
+.env
+
+# Ignora archivos temporales de VSCode
+.vscode/
+
+# Ignora logs del sistema
+*.log
+
+# Ignora sistema operativo y otras herramientas
+.DS_Store
+Thumbs.db

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina web del famoso restaurante Éclat, donde al comer tus sueños se haran realidad">
+    <link rel="icon" href="images/Trifuerza.svg.png">
+    <meta name="author" content="Equipo 1">
+    <title>Éclat</title>
+    <link rel="icon" type="image/png" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav-container">
+            <a href="index.html" class="logotipo-enlace">
+                <div class="logotipo">
+                    <img src="images/tri.png" alt="logo del restaurante" class="logo-eclat">
+                </div>
+            </a>
+            <ul class="nav-opciones">
+                <li class="nav-opcion">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-opcion">
+                    <a href="#nuestra-historia" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-opcion">
+                    <a href="pages/carta.html" class="nav-link">Carta</a>
+                </li>
+                <li class="nav-opcion">
+                    <a href="pages/reservaciones.html" class="nav-link">Reservaciones</a>
+                </li>
+                <li class="nav-opcion">
+                    <a href="pages/contactanos.html" class="nav-link">Contactanos</a>
+                </li>
+            </ul>
+            <div class="registro">
+                <button class="button-login"><svg class="icono-login" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M6 8a.5.5 0 0 1 .5-.5h4.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L11.293 8.5H6.5A.5.5 0 0 1 6 8z"/>
+                    <path d="M13 2.5A1.5 1.5 0 0 0 11.5 1h-9A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h9a1.5 1.5 0 0 0 1.5-1.5v-11zM2.5 2h9a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5z"/>
+                </svg>Ingresar</button>
+            </div>
+
+                <!--aqui va el modal no lo borren-->
+            <div class="modal" id="modal-ingresar">
+                <div class="modal-contenido">
+                    <button class="cerrar-modal">&times;</button>
+                    <img src="images/tri.png" alt="imagen-ingreso" class="imagen-ingreso">
+                    <h2 class="iniciar-sesion">Iniciar Sesion</h2>
+                    <form id="formulario-login">
+                        <div class="grupos">
+                            <div class="grupo-1">
+                                <label class="usuario-label" for="usuario">Usuario: </label>
+                                <input class="usuario"type="text" id="usuario" name="usuario" required>
+                            </div>
+                            <div class="grupo-2">
+                                <label class="contraseña-label" for="contraseña"><br>Contraseña: </label>
+                                <input class="contraseña" type="password" id="contrasena" name="contrasena" required>
+                            </div>
+                        </div>
+                        <div class="boton">
+                            <button class= "button-wa" type="submit">Ingresar</button>
+                        </div>
+                        <div class="botones">
+                            <button class="olvido" type="button">¿Has olvidado tu contraseña?</button>
+                            <h1 class="division">/</h1>
+                            <button class="crear" type="button">Registrarse en el sitio</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="control-header">
+    <section class="heroe">
+
+      <input type="radio" name="slider" id="slide1" checked hidden>
+      <input type="radio" name="slider" id="slide2" hidden>
+      <input type="radio" name="slider" id="slide3" hidden>
+
+      <div class="heroe-slider">
+        <div class="slide slide1">
+          <img src="images/restaurante-1.jpg" alt="Restaurante 1">
+        </div>
+        <div class="slide slide2">
+          <img src="images/restarurante-2.jpg" alt="Restaurante 2">
+        </div>
+        <div class="slide slide3">
+          <img src="images/restaurante-3.jpg" alt="Restaurante 3">
+        </div>
+      </div>
+
+        <label for="slide3" class="flecha-izquierda" aria-label="Anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </label>
+
+        <label for="slide2" class="flecha-derecha" aria-label="Siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </label>
+
+        <!-- Flechas slide 2 -->
+        <label for="slide1" class="flecha-izquierda" aria-label="Anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </label>
+
+        <label for="slide3" class="flecha-derecha" aria-label="Siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </label>
+
+        <!-- Flechas slide 3 -->
+        <label for="slide2" class="flecha-izquierda" aria-label="Anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </label>
+
+        <label for="slide1" class="flecha-derecha" aria-label="Siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </label>
+      </section>
+    </div>
+    <main> 
+    <!--parte de Alonso-->
+        <section id="nuestra-historia">
+        <div style="display: flex; align-items: center">
+            <div id="parrafo_body_1">
+                <h2 id="nuestrahistoria"><b>Nuestra Historia</b></h2>
+                <p>
+                    En el corazón de la excelencia gastronómica nació Éclat, un restaurante concebido para transformar cada comida en una experiencia inolvidable.<br>
+                    Desde su apertura, Éclat ha sido galardonado con estrellas Michelin, reflejo de su compromiso absoluto con la calidad, la creatividad y el arte culinario.<br>
+                    Inspirados en los sabores del mundo y en las técnicas más refinadas, nuestro equipo de chefs combina pasión e innovación en cada plato.<br>
+                    Cada ingrediente es seleccionado cuidadosamente para ofrecer una cocina vibrante, elegante y profundamente memorable.<br>
+                    Éclat no es solo un restaurante; es un destino donde cada detalle cuenta y cada visita deja una huella.
+                </p>
+            </div>
+  
+            <div id="img_body_1">
+                <img src="images/restaurante-pituco.jpg" alt="restaurante-pituco">
+            </div>
+        </div>
+  
+
+        <div style="display: flex; align-items: center">
+
+            <div id="img_body_2">
+                <img src="images/cevicheBODY.jpg" alt="ceviche-body" >
+            </div>
+
+            <div id="parrafo_body_2">
+                <h2 id="nuestracomida"><b>Nuestra Comida</b></h2>
+                <p>
+                    En Éclat, cada plato es una obra de arte. Nuestra cocina combina técnicas clásicas con una visión contemporánea, creando sabores que sorprenden y emocionan. <br> 
+                    Utilizamos ingredientes de la más alta calidad, seleccionados cuidadosamente en cada temporada, para ofrecer propuestas frescas, vibrantes y memorables.<br>
+                    Cada bocado en Éclat busca contar una historia: una fusión de tradición, innovación y pasión que invita a vivir una experiencia culinaria sin igual.<br>
+                </p>
+            </div>  
+        </div>
+    </section>
+
+    <div id="ir-arriba">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" viewBox="0 0 24 24">
+        <path d="M12 2L5 9h4v9h6V9h4z"/>
+      </svg>
+    </div>
+    
+  </main> 
+
+
+
+    <!--parte de Yarumy y Fadia-->
+    <footer>
+      <div class="footer-content">
+          <p>&copy; 2025 Restaurante Éclat. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+    
+    <script src="js/modal-mostrar.js"></script>
+    <script src="js/reserva-acciones.js"></script>
+    <script src="js/ir-arriba.js"></script>
+</body>
+</html>
